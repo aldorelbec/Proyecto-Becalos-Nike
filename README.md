@@ -44,4 +44,15 @@ Para contribuir al proyecto:
 
  ```bash
      git add .
-
+4. Crea un commit describiendo tus cambios:
+git commit -m "Descripción de tus cambios"
+5. Empuja tus cambios al repositorio remoto:
+bash
+git push origin nombre-de-tu-rama
+6. Crea un pull request desde GitHub para revisar tus cambios antes de fusionarlos con la rama principal (main).
+## Notas Importantes
+.Por favor, sigue la estructura del código y las convenciones del proyecto para garantizar la coherencia.
+.Asegúrate de que tus contribuciones no rompan ninguna funcionalidad existente.
+.Si tienes dudas, consulta con los responsables del proyecto.
+## Contacto
+Para cualquier consulta relacionada con el proyecto, puedes contactar con el equipo en mike.11.barranco@gmail.com
