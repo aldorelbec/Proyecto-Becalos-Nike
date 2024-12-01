@@ -8,7 +8,7 @@
     <meta property="og:description" content="Explora productos oficiales Nike y encuentra lo mejor en calzado, ropa y accesorios. Descubre beneficios exclusivos para miembros.">
     <meta property="og:url" content="https://www.nike.com/mx">
     <meta property="og:type" content="website">
-    
+    <link rel="stylesheet" href="styles.css">
     <title>Sitio web nike</title>
 </head>
 <body>
@@ -183,9 +183,9 @@
         <button>Comprar</button>
     </section>
 
-    <article>
-        <h2> CLASICOS EN TENDENCIA </h2>
-        <div class="carrousel">
+    <article class="section-tendencia">
+        <h2> CLÁSICOS EN TENDENCIA </h2>
+        <div class="carrousel-tendencia">
             <figure>
                 <a href="https://www.nike.com/mx/w/air-max-a6d8h">
                     <img 
@@ -257,6 +257,10 @@
                 </a>
             </figure>
         </div>
+        <div class="actions-tendencia">
+            <button class="carrousel-buttons" onclick="desplazarIzquierda()"> ❮ </button>
+            <button class="carrousel-buttons" onclick="desplazarDerecha()"> ❯ </button>
+        </div>
     </article>
 
     <article class="image-container">
@@ -302,5 +306,19 @@
       
 
 </footer>
+<script>
+    let currentScroll = 0;
+    const contenedor = document.querySelector('.carrousel-tendencia');
+    function desplazarDerecha() {
+        
+        const overflowWidth = contenedor.scrollWidth - contenedor.clientWidth;
+        currentScroll = overflowWidth < currentScroll ? overflowWidth : currentScroll + 200;
+        contenedor.scrollTo({ left: currentScroll, behavior: 'smooth' });
+    }
+    function desplazarIzquierda() {
+        currentScroll = 0 < currentScroll ? currentScroll - 200 : 0;
+      contenedor.scrollTo({ left: currentScroll, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>

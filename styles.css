@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
+}
+
+*{
+    box-sizing: content-box;
+}
+
+.section-tendencia{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.section-tendencia h2{
+    margin: 0 0 0 1rem;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.carrousel-tendencia{
+    display: flex;
+    gap: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrousel-tendencia figure{
+    min-width: 300px;
+    height: 450px;
+    margin: 0;
+}
+
+.carrousel-tendencia figure a,
+.carrousel-tendencia figure img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.carrousel-tendencia figure figcaption{
+    color: azure;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.actions-tendencia{
+    position: absolute;
+    top: 55%;
+    padding-inline: 1rem;
+    width: calc(100% - 7rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-tendencia button{
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 34px;
+    height: 32px;
+    padding: 0 0 0.1rem 0;
+    font-size: 1rem;
+    border: none;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px #5f5f5f;
+}
+
+.actions-tendencia button:hover{
+    background-color: rgb(240, 240, 240);
+}
