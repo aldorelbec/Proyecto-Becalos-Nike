@@ -34,3 +34,27 @@
 .btn-buenfin button:hover{
     background-color: #5e1212;
 }
+.tenis-precios-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tenis-precios-desc h2{
+    display: flex;
+    color: violet;
+    justify-content: center;
+}
+.contenedor-articulos-desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+}
+.contenedor-articulos-desc ul{
+    list-style: none;
+    color: white;
+    justify-items: center;
+}
+.articulos-desc img{
+    padding: 10px;
+}
