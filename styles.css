@@ -41,8 +41,26 @@
 }
 .tenis-precios-desc h2{
     display: flex;
-    color: violet;
+    color: rgb(0, 0, 0);
     justify-content: center;
+}
+.ver-todo-botones nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.ver-todo-botones nav div{
+    padding: 10px;
+}
+.ver-todo-botones nav p{
+    font-size: 30px;
+}
+.ver-todo-botones nav div button{
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
 }
 .contenedor-articulos-desc{
     display: flex;
