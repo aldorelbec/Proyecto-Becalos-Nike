@@ -7,6 +7,13 @@
     flex-direction: column;
 }
 .cambio-textos p{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+.cambio-textos p a{
+    font-size: 20px;
     padding: 5px;
     text-align: center;
 }
@@ -61,6 +68,9 @@
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
+}
+.ver-todo-botones nav div button:hover{
+    border-color: #5e1212;
 }
 .contenedor-articulos-desc{
     display: flex;
