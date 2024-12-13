@@ -209,6 +209,7 @@ body{
 .imagen-buenfin{
     position: relative;
     display: inline-block;
+    padding-bottom: 20px;
 }
 .btn-buenfin{
     position: absolute;
