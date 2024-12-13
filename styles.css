@@ -173,6 +173,28 @@ body{
     display: flex;
     flex-direction: column;
 }
+.slider-box{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+.slider-box ul{
+    display: flex;
+    width: 200%;
+    animation: slide 5s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
 .cambio-textos p{
     font-size: 20px;
     padding: 5px;
