@@ -9,9 +9,9 @@
     <meta property="og:url" content="https://www.nike.com/mx">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles-matriz.css">
     
     <title>Sitio web nike</title>
-    <link rel="stylesheet" href="styles-matriz.css">
 </head>
 <body>
     
@@ -73,18 +73,14 @@
                 </ul>
             </nav>
         </div>
-        <nav>
+        <nav class="aldo">
             <ul>
-              <li><a href="#">Lo nuevo</a>
-                <ul class="submenu">
-                  <li><a href="#">Hombre</a></li>
-                  <li><a href="#">Mujer</a></li>
-                  <li><a href="#">niño/a</a></li>
-                  <li><a href="#">Ofertas</a></li>
-                </ul>
-              </li>
-              <li><a href="#">SNKRS</a>
-                </li>
+                <li><a href="https://www.nike.com/mx/w/nuevos-lanzamientos-3n82y">Lo nuevo</a>
+                    <li><a href="https://www.nike.com/mx/hombre">Hombre</a></li>
+                    <li><a href="https://www.nike.com/mx/mujer">Mujer</a></li>
+                    <li><a href="https://www.nike.com/mx/ninos">Niña</a></li>
+                    <li><a href="https://www.nike.com/mx/w/rebajas-3yaep">Ofertas</a></li>
+                    <li><a href="https://www.nike.com/mx/launch">SNKRS</a></li>
               </ul>
           </nav>
     </header>
@@ -297,41 +293,57 @@
         </div>
     </div>
 
+    <footer>
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h3>Acerca de Nosotros</h3>
-              <ul>
-                <li><a href="#">Nuestra Historia</a></li>
-                <li><a href="#">Misión y Visión</a></li>
-                <li><a href="#">Carreras</a></li>
-              </ul>
+            <div class="row">
+                <div class="col">
+                    <h3>Acerca de Nosotros</h3>
+                    <ul>
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="#">Carreras</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Servicio al Cliente</h3>
+                    <ul>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Seguimiento de Pedidos</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Síguenos</h3>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.instagram.com/arturo.miranda.ez/">
+                                <i class="fab fa-facebook-f">Arturo</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/itsalebucks/">
+                                <i class="fab fa-twitter">Alejandra</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/aldorel.bec/">
+                                <i class="fab fa-instagram">Aldo</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram">Osiel</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col">
-              <h3>Servicio al Cliente</h3>
-              <ul>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Devoluciones</a></li>
-                <li><a href="#">Seguimiento de Pedidos</a></li>
-              </ul>
+            <div class="copyright">
+                <p>&copy;2024 Becalos Nike, Inc. Todos los derechos reservados.</p>
             </div>
-            <div class="col">
-              <h3>Síguenos</h3>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>   
-      
-              </ul>
-            </div>
-          </div>
-          <div class="copyright">
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-          </div>
         </div>
-      
+    </footer>
 
-</footer>
 <script>
     let currentScroll = 0;
     const contenedor = document.querySelector('.carrousel-tendencia');
