@@ -8,59 +8,69 @@
     <meta property="og:description" content="Explora productos oficiales Nike y encuentra lo mejor en calzado, ropa y accesorios. Descubre beneficios exclusivos para miembros.">
     <meta property="og:url" content="https://www.nike.com/mx">
     <meta property="og:type" content="website">
-    
+    <link rel="stylesheet" href="styles.css">
     <title>Sitio web nike</title>
 </head>
 <body>
     
-    <header>
-        <img src="https://logodownload.org/wp-content/uploads/2019/05/jordan-logo.png" alt="LOGO JORDAN" height="20px">
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.nike.com/mx/retail" target="_blank"> Buscar tienda </a>
-                </li>
-                <li>
-                    <details>
-                        <summary> 
-                            <a href="https://www.nike.com/mx/help" target="_blank"> Ayuda </a>  
-                        </summary>
-                        <ul>
-                            <li>
-                                <a href="https://www.nike.com/mx/orders" target="_blank"> Estado del pedido </a>
-                            </li>
-                            <li>
-                                <a href="https://www.nike.com/mx/help/a/envio-entrega-gs" target="_blank"> Envío y entrega </a>
-                            </li>
-                            <li>
-                                <a href="https://www.nike.com/mx/help/a/politica-de-devoluciones-gs" target="_blank"> Devoluciones </a>
-                            </li>
-                            <li>
-                                <a href="https://www.nike.com/mx/help/a/tablas-de-tallas-gs" target="_blank"> Tablas de tallas </a>
-                            </li>
-                            <li>
-                                <a href="https://www.nike.com/mx/help/#contact" target="_blank"> Comunícate con nosotros </a>
-                            </li>
-                            <li>
-                                <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;uxId=default&amp;country=MX&amp;language=es&amp;requestType=redirect" target="_blank"> Política de privacidad </a>
-                            </li>
-                            <li>
-                                <a href="https://www.eshopworld.com/terms-and-conditions-of-sale-es/" target="_blank"> Términos de rebajas </a>
-                            </li>
-                            <li>
-                                <a href="https://agreementservice.svs.nike.com/mx/es_la/rest/agreement?agreementType=termsOfUse&amp;uxId=com.nike.unite&amp;country=MX&amp;language=es&amp;requestType=redirect" target="_blank"> Términos de uso </a>
-                            </li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <a href="https://www.nike.com/mx/membresia" target="_blank"> Únete </a>
-                </li>
-                <li>
-                    <a href="https://www.nike.com/mx/register" target="_blank"> Iniciar sesión </a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="menu--first">
+            <img 
+                class="header-image"
+                src="https://logodownload.org/wp-content/uploads/2019/05/jordan-logo.png" alt="LOGO JORDAN" height="20px"
+            />
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.nike.com/mx/retail" target="_blank"> Buscar tienda </a>
+                    </li>
+                    <li>
+                        <details id="help">
+                            <summary> 
+                                <span>
+                                    Ayuda 
+                                </span>
+                            </summary>
+                            <ul class="help-list">
+                                <li>
+                                    <a href="https://www.nike.com/mx/help" target="_blank"> Ayuda </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nike.com/mx/orders" target="_blank"> Estado del pedido </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nike.com/mx/help/a/envio-entrega-gs" target="_blank"> Envío y entrega </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nike.com/mx/help/a/politica-de-devoluciones-gs" target="_blank"> Devoluciones </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nike.com/mx/help/a/tablas-de-tallas-gs" target="_blank"> Tablas de tallas </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nike.com/mx/help/#contact" target="_blank"> Comunícate con nosotros </a>
+                                </li>
+                                <li>
+                                    <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;uxId=default&amp;country=MX&amp;language=es&amp;requestType=redirect" target="_blank"> Política de privacidad </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.eshopworld.com/terms-and-conditions-of-sale-es/" target="_blank"> Términos de rebajas </a>
+                                </li>
+                                <li>
+                                    <a href="https://agreementservice.svs.nike.com/mx/es_la/rest/agreement?agreementType=termsOfUse&amp;uxId=com.nike.unite&amp;country=MX&amp;language=es&amp;requestType=redirect" target="_blank"> Términos de uso </a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href="https://www.nike.com/mx/membresia" target="_blank"> Únete </a>
+                    </li>
+                    <li>
+                        <a href="https://www.nike.com/mx/register" target="_blank"> Iniciar sesión </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <nav>
             <ul>
               <li><a href="#">Lo nuevo</a>
@@ -183,9 +193,9 @@
         <button>Comprar</button>
     </section>
 
-    <article>
-        <h2> CLASICOS EN TENDENCIA </h2>
-        <div class="carrousel">
+    <article class="section-tendencia">
+        <h2> CLÁSICOS EN TENDENCIA </h2>
+        <div class="carrousel-tendencia">
             <figure>
                 <a href="https://www.nike.com/mx/w/air-max-a6d8h">
                     <img 
@@ -257,6 +267,10 @@
                 </a>
             </figure>
         </div>
+        <div class="actions-tendencia">
+            <button class="carrousel-buttons" onclick="desplazarIzquierda()"> ❮ </button>
+            <button class="carrousel-buttons" onclick="desplazarDerecha()"> ❯ </button>
+        </div>
     </article>
 
     <article class="image-container">
@@ -302,5 +316,27 @@
       
 
 </footer>
+<script>
+    let currentScroll = 0;
+    const contenedor = document.querySelector('.carrousel-tendencia');
+    const details = document.getElementById('help');
+    const helpList = document.querySelector('.help-list');
+
+    function desplazarDerecha() {
+        
+        const overflowWidth = contenedor.scrollWidth - contenedor.clientWidth;
+        currentScroll = overflowWidth < currentScroll ? overflowWidth : currentScroll + 200;
+        contenedor.scrollTo({ left: currentScroll, behavior: 'smooth' });
+    }
+    function desplazarIzquierda() {
+        currentScroll = 0 < currentScroll ? currentScroll - 200 : 0;
+      contenedor.scrollTo({ left: currentScroll, behavior: 'smooth' });
+    }
+
+    helpList.addEventListener('mouseleave', () => {
+        details.removeAttribute('open');
+    });
+
+  </script>
 </body>
 </html>
