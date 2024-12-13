@@ -165,3 +165,92 @@ body{
 .actions-tendencia button:hover{
     background-color: rgb(240, 240, 240);
 }
+*{
+    padding: 0;
+    margin: 0;
+}
+.cambio-textos{
+    display: flex;
+    flex-direction: column;
+}
+.cambio-textos p{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+.cambio-textos p a{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.imagen-buenfin{
+    position: relative;
+    display: inline-block;
+}
+.btn-buenfin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.btn-buenfin button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.btn-buenfin button:hover{
+    background-color: #5e1212;
+}
+.tenis-precios-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tenis-precios-desc h2{
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+.ver-todo-botones nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.ver-todo-botones nav div{
+    padding: 10px;
+}
+.ver-todo-botones nav p{
+    font-size: 30px;
+}
+.ver-todo-botones nav div button{
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+}
+.ver-todo-botones nav div button:hover{
+    border-color: #5e1212;
+}
+.contenedor-articulos-desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+}
+.contenedor-articulos-desc ul{
+    list-style: none;
+    color: white;
+    justify-items: center;
+}
+
+.articulos-desc img{
+    padding: 10px;
+}
