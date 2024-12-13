@@ -11,7 +11,7 @@ body{
 .header{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 .header-image{
@@ -174,7 +174,7 @@ body{
     flex-direction: column;
 }
 .slider-box{
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow: hidden;
 }
