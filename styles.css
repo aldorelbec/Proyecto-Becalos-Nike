@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;  /* este estilo de letra se hereda a todo el body ejemplo de herencia  */
 }
 
 *{
@@ -38,7 +38,7 @@ body{
 
 .menu--first nav ul li:last-of-type,
 .help-list li{
-    border: 0 !important;
+    border: 0 !important;  /* este es un ejemplo de especificidad con la etiqueta important para aplicar el borde y padding*/
     padding: 0 !important;
 }
 
@@ -77,7 +77,7 @@ body{
 }
 
 .help-list li:hover a{
-    color: black !important;
+    color: black !important;   /* mas ejemplos de especificidad */
 }
 
 .help-list li:first-of-type a{
