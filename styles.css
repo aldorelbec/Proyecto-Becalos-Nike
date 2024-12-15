@@ -434,38 +434,74 @@ footer .copyright p {
     margin: 0;
 }
 
-.flex-container { /* Este es un ejemplo de alineaciones especifica con flexbox en css */
+.cookie-footer { /* Este es un ejemplo de footer de cookies*/
 
-    display: flex;
+    position: fixed; /* Siempre visible al final de la pantalla */
   
-    align-items: flex-start; 
+    bottom: 0; /* Pegado a la parte inferior */
   
-    height: 200px; /* Definir una altura para el contenedor */
+    left: 0;
   
-    gap: 10px; /* Espacio entre elementos */
+    right: 0;
   
-    background-color: #f4f4f4;
+    background-color: #222; /* Fondo oscuro para que destaque */
   
-    padding: 10px;
+    color: #fff; /* Texto en blanco para buen contraste */
+  
+    padding: 1em;
+  
+    display: flex; /* Organiza el contenido de manera horizontal */
+  
+    justify-content: space-between; /* Espacia el texto y el botón */
+  
+    align-items: center;
   
   }
   
-  .item {
+  .cookie-footer button {
   
-    background-color: #007BFF;
+    background-color: #4caf50; /* Verde para el botón */
   
     color: white;
   
-    padding: 20px;
+    border: none;
   
-    text-align: center;
+    padding: 0.5em 1em;
   
-    border-radius: 5px;
+    cursor: pointer;
   
   }
   
-  .special-item {
+  .cookie-footer button:hover {
   
-    align-self: flex-end; /* Este elemento se alinea al final en el eje cruzado */
+    background-color: #45a049; /* Efecto al pasar el ratón sobre el botón */
+  
+  }
+
+  .contenedor { /* Este es un ejemplo de footer de cookies*/
+
+    display: flex;
+  
+    justify-content: center; /* Centrar horizontalmente */
+  
+    align-items: center; /* Centrar verticalmente */
+  
+    height: 100vh; /* Hacer que ocupe toda la altura de la pantalla */
+  
+    background-color: #f4f4f4;
+  
+  }
+  
+  .card {
+  
+    background-color: white;
+  
+    padding: 20px;
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    border-radius: 8px;
+  
+    text-align: center;
   
   }
