@@ -9,8 +9,8 @@ body{
 }
 
 .header{
-    display: flex;  /* este es un ejemplo de propiedades de CSS correspondiente con el display Flexbox, en este caso .header se hace flex con la etiqueta display flex */
-    flex-direction: column;  /* flex-direction: column ordena los elementos en colunmas */
+    display: flex;  
+    flex-direction: column;  
     width: 100%;
 }
 
@@ -21,10 +21,10 @@ body{
 
 .menu--first{
     background-color: #f5f5f5;
-    display: flex;
-    justify-content: space-between;  /* Con justify-content: space-between los elementos se separarán por espacios iguales. */
+    display: flex; /*convierte el contenedor en un contenedor flex.*/
+    justify-content: space-between;  /*Los elementos se separarán por espacios iguales*/
     padding: 0rem 1.5rem;
-    align-items: center;
+    align-items: center;  /* Esto sirve para alinear los elementos hijos de un contenedor flexbox a lo largo del eje cruzado (por defecto, el eje vertical).*/
 }
 
 .menu--first nav summary{
@@ -62,8 +62,7 @@ body{
 }
 
 .help-list{
-    position: absolute;   /* Este es un ejemplo de position en csss, ocupamos la etiqueta position con el valor de absolute el cual sirve para
-    sacar a help-list del flujo normal del documento y se posiciona en relación con su contenedor más cercano que tenga un posicionamiento distinto a static */
+    position: absolute;   
     flex-direction: column;
     padding: 0;
     margin-left: -2.5rem;
@@ -114,7 +113,7 @@ body{
     display: flex;
     gap: 0.5rem;
     overflow: hidden;
-    position: relative;  /* Aqui tenemos un position: relative el caul no saca al elemento del flujo normal del documento */
+    position: relative;  
 }
 
 .carrousel-tendencia figure{
@@ -247,7 +246,7 @@ body{
 .ver-todo-botones nav{
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: center; /*Alinea los elementos verticalmente dentro de cada línea.*/
 }
 .ver-todo-botones nav div{
     padding: 10px;
@@ -267,14 +266,14 @@ body{
 }
 .contenedor-articulos-desc{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias líneas.*/
     justify-content: center;
     background-color: #000;
 }
 .contenedor-articulos-desc ul{
     list-style: none;
     color: white;
-    text-align: center;
+    text-align: center; /*para alinear horizontalmente el contenido de un elemento en el centro*/
 }
 
 .articulos-desc img{
@@ -284,7 +283,7 @@ body{
 .combina-entrena{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  /* para alinear los elementos hijos de un contenedor flexbox a lo largo del eje cruzado */
 
 }
 
@@ -327,7 +326,7 @@ nav.aldo ul {
 }
 
 nav.aldo ul li {
-    display: inline-block;  /* esto sirve para que se coloquen los elementos uno al lado del otro pero a la vez permiten aplicarles estilos como ancho, alto y márgenes, como si fueran elementos de bloque. */
+    display: inline-block;  
     margin-right: 20px;
 }
 
@@ -435,24 +434,38 @@ footer .copyright p {
     margin: 0;
 }
 
-.fixed-menu { /* ejemplo de sticky, ele cual se fija a la pantalla como el chatbot de campus*/
+.flex-container { /* Este es un ejemplo de alineaciones especifica con flexbox en css */
 
-    position: fixed;
+    display: flex;
   
-    top: 0; 
+    align-items: flex-start; 
   
-    left: 0;
+    height: 200px; /* Definir una altura para el contenedor */
   
-    width: 100%; 
+    gap: 10px; /* Espacio entre elementos */
   
-    background-color: #333;
+    background-color: #f4f4f4;
+  
+    padding: 10px;
+  
+  }
+  
+  .item {
+  
+    background-color: #007BFF;
   
     color: white;
   
+    padding: 20px;
+  
     text-align: center;
   
-    padding: 10px 0;
+    border-radius: 5px;
   
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .special-item {
+  
+    align-self: flex-end; /* Este elemento se alinea al final en el eje cruzado */
   
   }
